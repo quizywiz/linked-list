@@ -56,7 +56,7 @@ int list_push(node** p,const int* elem)
 } 
 
 //removes element from list. returns -1 if underflow, returns element popped otherwise
-int pop(node** p)
+int list_pop(node** p)
 {
     if(*p==NULL)
         return -1;
@@ -77,7 +77,7 @@ int pop(node** p)
     }
 }
 
-int length(node* p)
+int list_length(node* p)
 {
     node* temp = p;
     if(temp==NULL)
@@ -90,7 +90,7 @@ int length(node* p)
     return size;
 }
 
-int delete(node** p)
+int list_delete(node** p)
 {
     node* temp = *p;
     while(*p!=NULL)

@@ -10,6 +10,7 @@ typedef struct node node;
 node* get_2last(node*);
 void list_init(node**);
 int list_push(node**,const int*);
-int pop(node**);
-int length(node*);
+int list_pop(node**);
+int list_length(node*);
+int list_delete(node**);
 #endif
